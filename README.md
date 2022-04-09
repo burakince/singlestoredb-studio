@@ -10,6 +10,7 @@
 
 [SingleStore DB Studio docker hub repository](https://hub.docker.com/r/burakince/singlestoredb-studio)
 
+[![Docker](https://github.com/burakince/singlestoredb-studio/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/burakince/singlestoredb-studio/actions/workflows/docker-publish.yml)
 ![SingleStore DB Studio Docker Pulls](https://img.shields.io/docker/pulls/burakince/singlestoredb-studio)
 ![SingleStore DB Studio Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/burakince/singlestoredb-studio?sort=date)
 
