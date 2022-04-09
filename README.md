@@ -1,10 +1,14 @@
-# MemSQL Studio (Deprecated)
+### MemSQL Studio (Deprecated)
+
+[MemSQL Studio docker hub repository](https://hub.docker.com/r/burakince/memsql-studio)
 
 ![MemSQL Studio (Deprecated) Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/burakince/memsql-studio)
 ![MemSQL Studio (Deprecated) Docker Pulls](https://img.shields.io/docker/pulls/burakince/memsql-studio)
 ![MemSQL Studio (Deprecated) Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/burakince/memsql-studio?sort=date)
 
-# SingleStore DB Studio
+### SingleStore DB Studio
+
+[SingleStore DB Studio docker hub repository](https://hub.docker.com/r/burakince/singlestoredb-studio)
 
 ![SingleStore DB Studio Docker Pulls](https://img.shields.io/docker/pulls/burakince/singlestoredb-studio)
 ![SingleStore DB Studio Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/burakince/singlestoredb-studio?sort=date)
