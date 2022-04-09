@@ -9,6 +9,10 @@
 # Icon must end with two \r
 Icon
 
+*.rpm
+**/*.rpm
+*.bak
+**/*.bak
 
 # Thumbnails
 ._*
