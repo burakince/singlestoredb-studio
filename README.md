@@ -6,7 +6,6 @@
 
 # SingleStore DB Studio
 
-![SingleStore DB Studio Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/burakince/singlestoredb-studio)
 ![SingleStore DB Studio Docker Pulls](https://img.shields.io/docker/pulls/burakince/singlestoredb-studio)
 ![SingleStore DB Studio Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/burakince/singlestoredb-studio?sort=date)
 
