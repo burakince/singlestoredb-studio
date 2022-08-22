@@ -15,6 +15,7 @@
 ![SingleStore DB Studio Docker Pulls](https://img.shields.io/docker/pulls/burakince/singlestoredb-studio)
 ![SingleStore DB Studio Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/burakince/singlestoredb-studio?sort=date)
 ![SingleStore DB Studio Docker Image Version (latest semver)](https://img.shields.io/docker/v/burakince/singlestoredb-studio?sort=semver)
+[![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/singlestoredb-studio)](https://artifacthub.io/packages/search?repo=singlestoredb-studio)
 
 # SingleStore DB Studio Docker
 
