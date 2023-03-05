@@ -39,17 +39,11 @@ jobs:
 
       - name: Install ORAS
         id: install_oras
-        if: ${{ github.event_name != 'pull_request' }}
-        run: |
-          orasVersion=$( curl --silent https://api.github.com/repos/oras-project/oras/releases/latest | jq -r '.tag_name' | sed 's/v//' )
-          curl -LO https://github.com/oras-project/oras/releases/download/v${orasVersion}/oras_${orasVersion}_linux_amd64.tar.gz
-          tar -zxvf oras_${orasVersion}_linux_amd64.tar.gz
-          rm -f oras_${orasVersion}_linux_amd64.tar.gz
+        uses: oras-project/setup-oras@main
 
       - name: Install Cosign
         id: install_cosign
-        if: ${{ github.event_name != 'pull_request' }}
-        uses: sigstore/cosign-installer@main
+        uses: sigstore/cosign-installer@v3.0.1
 
       # Workaround: https://github.com/docker/build-push-action/issues/461
       - name: Setup Docker buildx
@@ -132,10 +126,5 @@ jobs:
       # https://github.com/sigstore/cosign
       - name: Sign the published Docker image
         if: ${{ github.event_name != 'pull_request' }}
-        env:
-          COSIGN_EXPERIMENTAL: "true"
-        # This step uses the identity token to provision an ephemeral certificate
-        # against the sigstore community Fulcio instance.
         run: |
-          cosign sign docker.io/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
-          cosign sign ghcr.io/${{ env.IMAGE_NAME }}@${{ steps.build-and-push.outputs.digest }}
+          echo "${{ steps.meta.outputs.tags }}" | xargs -I {} cosign sign -y {}@${{ steps.build-and-push.outputs.digest }}
