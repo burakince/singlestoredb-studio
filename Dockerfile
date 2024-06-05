@@ -1,7 +1,7 @@
 FROM centos:7
 
 ENV RELEASE_CHANNEL=production \
-    STUDIO_VERSION=4.0.17
+    STUDIO_VERSION=4.1.0
 
 RUN yum -y update-minimal --setopt=tsflags=nodocs --security --sec-severity=Important --sec-severity=Critical \
     && yum -y install yum-plugin-security \
