@@ -1,3 +1,5 @@
+> :warning: **This repository is archived because Centos reached End of Life and I don't see any reason to continue to support SingleStore DB Studio
+
 ### MemSQL Studio (Deprecated)
 
 [MemSQL Studio docker hub repository](https://hub.docker.com/r/burakince/memsql-studio)
